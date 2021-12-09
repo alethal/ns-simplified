@@ -5,7 +5,9 @@ import { faUser} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class MemberPWReminder extends React.Component {
-
+  constructor(props) {
+    super(props);
+  }
 
 render() {
     return  (
@@ -36,7 +38,7 @@ render() {
             Submit
     </button>*/}
         </form>
-        <p>&nbsp;</p><p><em>shawn51@cubik.com - test user.<br />Be sure to use an email that has an active membership in Guerilla.  Beta-Trenton does not have sign-up set-up yet.</em></p>
+        <p>&nbsp;<p><em>shawn51@cubik.com - test user.<br />Be sure to use an email that has an active membership in Guerilla.  Beta-Trenton does not have sign-up set-up yet.</em></p></p>
       </div>
       </div>
     );
