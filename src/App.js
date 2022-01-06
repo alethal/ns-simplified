@@ -1,36 +1,52 @@
-
 import React from 'react';
-//import ForgotPasswordPage from './components/ForgotPassword/ForgotPassword.js';
-import './components/ForgotPassword/ForgotPassword.scss';
+//import {Helmet} from "react-helmet";
+//import '@fortawesome/fontawesome-free/css/all.min.css';
+//import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
-//import FormSubmitApiPage from './components/FormSubmitApi/FormSubmitApi.js';
+//import LoadingMask from "./components/LoadingMask/LoadingMask";
+import MainDashboard from './pages/MainDashBoard/MainDashboard';
+//import {MiniPlayerContainer} from "@falconstudios/ns-player";
+//import OutDatedBrowserComponent from "./pages/OutDatedBrowserComponent/OutDatedBrowserComponent";
 
-//import SimpleFormPage from './components/SimpleForm/SimpleForm.js';
+//import 'video.js/dist/video-js.css';
+//import '@videojs/themes/dist/fantasy/index.css';
+//import 'videojs-playlist-ui/dist/videojs-playlist-ui.vertical.css';
+//import 'react-image-lightbox/style.css';
+//import Div100vh from 'react-div-100vh';
+//import {isIE} from 'react-device-detect';
+//import TagManager from 'react-gtm-module';
 
-//import SimpleFormThreeForm from './components/SimpleFormThree/SimpleFormThree.js';
+//import './styles/main.scss';
+//import './App.scss';
 
-//import SimpleFormTwoForm from './components/SimpleFormTwo/SimpleFormTwo.js';
-
-
-import MemberPWReminder from './components/MemberPWReminder/MemberPWReminder.js';
+//const tagManagerArgs = {
+ // gtmId: 'GTM-M7XV3FB'
+//}
+//TagManager.initialize(tagManagerArgs)
 
 
 import logo from './falcon-ns-logo.png';
 import './App.css';
 
+
 function App() {
+ // window.dataLayer.push({ event: 'pageview' });
+
   return (
-    <div className="App">
-      <div className="bodyTestContent">
+    //<Div100vh>
+      <div className="App">
+       {/* <Helmet>
+          <meta name="description" content={process.env.REACT_APP_SITE_DESCRIPTION}/>
+        </Helmet>
+        <Suspense fallback={<div className="SuspenseLoader">Loading...</div>}>
+          {isIE ? <OutDatedBrowserComponent/> : <MainDashboard/>}
+        </Suspense>
+        <MiniPlayerContainer/>
+        <LoadingMask/>
+        */}
+        <MainDashboard/>
 
-   <div className="bodyTestContent">
-{/*dec 9 2021 */}
-   <MemberPWReminder />
-
-</div>
-
-      </div>
-      <header className="App-header">
+        <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
          Stripped Down NS - Deployed to GitHub Pages
@@ -45,8 +61,15 @@ function App() {
         </a>
         <p>Mirroring Enabled / Node Version Added</p>
       </header>
-    </div>
+
+      
+      </div>
+    //</Div100vh>
   );
 }
 
 export default App;
+
+
+
+
