@@ -48,6 +48,7 @@ export const routes = {
   oneredirectpage: 'oneredirectpage',
   redirecttopage: 'redirecttopage',
   weekendslandingpage: 'weekendslandingpage',
+  weekendstoredirectpage: 'weekendstoredirectpage',
   standaloneplayerpage: 'standaloneplayerpage',
 };
 
@@ -193,6 +194,8 @@ export const getOneRedirectPage = () => `/${routes.oneredirectpage}`;
 export const getRedirectToPage = () => `/${routes.redirecttopage}`;
 
 export const getWeekendsLandingPageRoute = () => `/${routes.weekendslandingpage}`;
+
+export const getWeekendsToRedirectPageRoute = () => `/${routes.weekendstoredirectpage}`;
 
 export const getApplicationStartRoute = () => `${routes.root}`;
 

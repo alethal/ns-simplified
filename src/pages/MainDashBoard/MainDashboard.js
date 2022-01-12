@@ -13,6 +13,7 @@ import ResetPasswordDialogPage from "./ResetPasswordDialogPage/";
 import OneRedirectPage from "./Redirects/OneRedirect.js";
 import RedirectToPage from "./Redirects/RedirectToPage.js";
 import WeekendsLandingPage from "./WeekendsPage/WeekendsLandingPage.js";
+import WeekendsToRedirectPage from "./WeekendsToRedirectPage/WeekendsToRedirectPage.js";
 import StandAlonePlayerPage from "./StandAlonePlayerPage/StandAlonePlayerPage.js";
 import {
     routes
@@ -44,14 +45,20 @@ class MainDashboard extends Component {
                         <HelpPage path={routes.help}/>
                         <ForgotPasswordPage path={routes.forgotpasswordpage}/>
                         <ResetPasswordDialogPage path={routes.resetpassworddialogpage}/>
-                        <OneRedirectPage path={routes.oneredirectpage}/>
-                        <RedirectToPage path={routes.redirecttopage}/>
+
                         <WeekendsLandingPage path={routes.weekendslandingpage}/>
                         <StandAlonePlayerPage path={routes.standaloneplayerpage}/>
+
+                            <OneRedirectPage path={routes.oneredirectpage}/>
+                            <RedirectToPage path={routes.redirecttopage}/>
+                        <WeekendsToRedirectPage path={routes.weekendstoredirectpage}/>
+
                     </Router>
                 </div>
                     <div className="NavLinksVersion">
-                    <Link to="/">Welcome</Link> | <Link to="/help">Help</Link> | <Link to="/forgotpasswordpage">Forgot Password Page</Link> | <Link to="/oneredirectpage">One Redirect Page</Link> | <Link to="/redirecttopage">Redirect to page - weekends</Link> | <Link to={"/weekendslandingpage"}>Weekends Landing Page</Link> | <Link to={"/standaloneplayerpage"}>Stand Alone Player Page</Link>
+                    <Link to="/">Welcome</Link> | <Link to="/help">Help</Link> | <Link to="/forgotpasswordpage">Forgot Password Page</Link> | <Link to={"/weekendslandingpage"}>Weekends Landing Page</Link> | <Link to={"/standaloneplayerpage"}>Stand Alone Player Page</Link>
+                        <br />
+                        <Link to="/weekendstoredirectpage">Weekends to Redirect</Link> | <Link to="/oneredirectpage">One Redirect Page</Link> | <Link to="/redirecttopage">Redirect to page - weekends</Link>
                     </div>
 
         <div className="MainDashboard">

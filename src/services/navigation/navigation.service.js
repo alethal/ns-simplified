@@ -53,6 +53,7 @@ import {
     //getForgotPasswordPage,
     getWeekendsLandingPageRoute,
     getResetPasswordDialogPage,
+    getWeekendsToRedirectPageRoute,
     getStandAlonePlayerPageRoute,
     routes
 } from "./navigation.service.routes";
@@ -183,6 +184,12 @@ export const showRedirectToPage = () => navigate(getRedirectToPage());
 export const showWeekendsLandingPage = () => navigate(getWeekendsLandingPageRoute());
 
 export const showStandAlonePlayerPage = () => navigate(getStandAlonePlayerPageRoute());
+
+export const showWeekendsToRedirectPag = () => navigate(getWeekendsToRedirectPage());
+
+
+
+e
 
 
 
