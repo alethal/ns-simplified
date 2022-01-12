@@ -14,27 +14,40 @@ import MainDashboard from './pages/MainDashBoard/MainDashboard';
 //import 'react-image-lightbox/style.css';
 //import Div100vh from 'react-div-100vh';
 //import {isIE} from 'react-device-detect';
-//import TagManager from 'react-gtm-module';
+import logo from './falcon-ns-logo.png';
+import './App.css';
+import TagManager from 'react-gtm-module';
 
 //import './styles/main.scss';
 //import './App.scss';
 
-//const tagManagerArgs = {
- // gtmId: 'GTM-M7XV3FB'
-//}
-//TagManager.initialize(tagManagerArgs)
-
-
-import logo from './falcon-ns-logo.png';
-import './App.css';
+const tagManagerArgs = {
+ gtmId: 'GTM-M7XV3FB'
+}
+TagManager.initialize(tagManagerArgs)
 
 
 function App() {
- // window.dataLayer.push({ event: 'pageview' });
+ window.dataLayer.push({ event: 'pageview' });
 
   return (
     //<Div100vh>
       <div className="App">
+          <MainDashboard/>
+<p>&nbsp;</p>
+
+
+
+          <div className="App-content">
+
+
+
+
+          </div>
+
+
+
+
        {/* <Helmet>
           <meta name="description" content={process.env.REACT_APP_SITE_DESCRIPTION}/>
         </Helmet>
@@ -44,23 +57,30 @@ function App() {
         <MiniPlayerContainer/>
         <LoadingMask/>
         */}
-        <MainDashboard/>
+
 
         <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Stripped Down NS - Deployed to GitHub Pages
-        </p>
-        <a
-          className="App-link"
-          href="https://ns-cubik.gitlab.io/ns-simplified"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         https://ns-cubik.gitlab.io/ns-simplified
-        </a>
-        <p>Mirroring Enabled / Node Version Added</p>
-      </header>
+
+
+           <div><img src={logo} className="App-logo" alt="logo" /></div>
+            <div>
+                <h4>
+                    Stripped Down NS - Deployed to GitHub Pages
+                </h4>
+            <a
+                className="App-link"
+                href="https://ns-cubik.gitlab.io/ns-simplified" rel="noreferrer"
+                target="_blank">https://ns-cubik.gitlab.io/ns-simplified
+            </a>
+               <p>&nbsp;</p> <p className="NotesToss"> Mirroring Enabled / Node Version Added</p>
+            </div>
+        </header>
+
+
+
+
+
+
 
       
       </div>

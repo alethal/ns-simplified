@@ -1,57 +1,60 @@
 import {navigate} from "@reach/router";
 import {
-  getApplicationStartRoute,
-  //getBrowsingPageRoute,
+    getApplicationStartRoute,
+    //getBrowsingPageRoute,
 //  getBillingAndSupportRoute,
- getHelpRoute,
- // getJustAddedMoviesRoute,
- // getJustAddedPageRoute,
- // getJustAddedScenesRoute,
- // getMemberBenefitsPageRoute,
- // getMyAccountRoute,
- // getMyDealsRoute,
- // getNewsLetterRoute,
- // getOriginalsPageRoute,
- // getPartnersRoute,
- // getPlaylistsRoute,
+    getHelpRoute,
+    // getJustAddedMoviesRoute,
+    // getJustAddedPageRoute,
+    // getJustAddedScenesRoute,
+    // getMemberBenefitsPageRoute,
+    // getMyAccountRoute,
+    // getMyDealsRoute,
+    // getNewsLetterRoute,
+    // getOriginalsPageRoute,
+    // getPartnersRoute,
+    // getPlaylistsRoute,
 // getPrivacyPolicyRoute,
- // getStarsPageRoute,
- // getStarDetailsRoute,
- // getStudiosRoute,
- // getTermsOfUseRoute,
- // getThemesRoute,
- // getTop10PageRoute,
- // getTwitterRoute,
- // getThemeDetailsRoute,
- // getMovieDetailsPageRoute,
+    // getStarsPageRoute,
+    // getStarDetailsRoute,
+    // getStudiosRoute,
+    // getTermsOfUseRoute,
+    // getThemesRoute,
+    // getTop10PageRoute,
+    // getTwitterRoute,
+    // getThemeDetailsRoute,
+    // getMovieDetailsPageRoute,
 //  getStudioDetailsRoute,
- // getWeekendsPageRoute,
- // getSceneDetailsPageRoute,
- // getDirectorDetailsPageRoute,
- // getMoviePlaylistRoute,
- // getScenePlaylistRoute,
- // getCustomPlaylistRoute,
+    // getWeekendsPageRoute,
+    // getSceneDetailsPageRoute,
+    // getDirectorDetailsPageRoute,
+    // getMoviePlaylistRoute,
+    // getScenePlaylistRoute,
+    // getCustomPlaylistRoute,
 //  getJoinLinkRoute,
- // getMostWatchedPageRoute,
- // getMostWatchedMoviesRoute,
- // getMostWatchedScenesRoute,
- // getCompliancePageRoute,
- // getOriginalsMoviesPageRoute,
- //getOriginalsScenesPageRoute,
- // getFavoritesPageRoute,
- // getLikesPageRoute,
-  //getViewingHistoryPageRoute,
-  //getNoSearchResultsRoute,
- // getSexActDetailsRoute,
-  getResetPasswordDialog,
-  getRedirectToPage,
-  getOneRedirectPage,
-  //getStarLetterListRoute,
-  //getStarMoviesRoute,
-  //getStarScenesRoute,
-  getForgotPasswordPageRoute,
-  //getForgotPasswordPage,
-  getResetPasswordDialogPage
+    // getMostWatchedPageRoute,
+    // getMostWatchedMoviesRoute,
+    // getMostWatchedScenesRoute,
+    // getCompliancePageRoute,
+    // getOriginalsMoviesPageRoute,
+    //getOriginalsScenesPageRoute,
+    // getFavoritesPageRoute,
+    // getLikesPageRoute,
+    //getViewingHistoryPageRoute,
+    //getNoSearchResultsRoute,
+    // getSexActDetailsRoute,
+    getResetPasswordDialog,
+    getRedirectToPage,
+    getOneRedirectPage,
+    //getStarLetterListRoute,
+    //getStarMoviesRoute,
+    //getStarScenesRoute,
+    getForgotPasswordPageRoute,
+    //getForgotPasswordPage,
+    getWeekendsLandingPageRoute,
+    getResetPasswordDialogPage,
+    getStandAlonePlayerPageRoute,
+    routes
 } from "./navigation.service.routes";
 
 //import {openNewBrowserTab} from "../util-service/util.service";
@@ -139,9 +142,6 @@ export const showApplicationStart = () => navigate(getApplicationStartRoute());
 
 export const showForgotPasswordPage = () => navigate(getForgotPasswordPageRoute());
 
-
-
-
 //export const showEntityDetailsPage = (url) => {
   //const {
    // movieId, movieName, moviePlaylistId, playlistName, sceneIndex,
@@ -178,6 +178,13 @@ export const showResetPasswordDialogPage = () => navigate(getResetPasswordDialog
 export const showOneRedirectPage = () => navigate(getOneRedirectPage());
 
 export const showRedirectToPage = () => navigate(getRedirectToPage());
+
+
+export const showWeekendsLandingPage = () => navigate(getWeekendsLandingPageRoute());
+
+export const showStandAlonePlayerPage = () => navigate(getStandAlonePlayerPageRoute());
+
+
 
 
 

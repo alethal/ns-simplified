@@ -12,7 +12,8 @@ import ForgotPasswordPage from "./ForgotPasswordPage";
 import ResetPasswordDialogPage from "./ResetPasswordDialogPage/";
 import OneRedirectPage from "./Redirects/OneRedirect.js";
 import RedirectToPage from "./Redirects/RedirectToPage.js";
-
+import WeekendsLandingPage from "./WeekendsPage/WeekendsLandingPage.js";
+import StandAlonePlayerPage from "./StandAlonePlayerPage/StandAlonePlayerPage.js";
 import {
     routes
 } from "../../services/navigation/navigation.service.routes";
@@ -35,26 +36,39 @@ class MainDashboard extends Component {
     render() {
 
         return (
-            <div className="MainDashboard">
 
+    <div className="Route-Dashboard-Nav-Holder">
+                <div className="RouteHolder">
+                    <Router>
+                        <showApplicationStart path="/" />
+                        <HelpPage path={routes.help}/>
+                        <ForgotPasswordPage path={routes.forgotpasswordpage}/>
+                        <ResetPasswordDialogPage path={routes.resetpassworddialogpage}/>
+                        <OneRedirectPage path={routes.oneredirectpage}/>
+                        <RedirectToPage path={routes.redirecttopage}/>
+                        <WeekendsLandingPage path={routes.weekendslandingpage}/>
+                        <StandAlonePlayerPage path={routes.standaloneplayerpage}/>
+                    </Router>
+                </div>
+                    <div className="NavLinksVersion">
+                    <Link to="/">Welcome</Link> | <Link to="/help">Help</Link> | <Link to="/forgotpasswordpage">Forgot Password Page</Link> | <Link to="/oneredirectpage">One Redirect Page</Link> | <Link to="/redirecttopage">Redirect to page - weekends</Link> | <Link to={"/weekendslandingpage"}>Weekends Landing Page</Link> | <Link to={"/standaloneplayerpage"}>Stand Alone Player Page</Link>
+                    </div>
+
+        <div className="MainDashboard">
                 <div className="MainContent">
                     <div className="MainContent-inner">
                         <div className="MainContainer">
-                                <Router>
-                                  <HelpPage path={routes.help}/>
-                                   <ForgotPasswordPage path={routes.forgotpasswordpage}/>
-                                    <ResetPasswordDialogPage path={routes.resetpassworddialogpage}/>
-                                     <OneRedirectPage path={routes.oneredirectpage}/>
-                                     <RedirectToPage path={routes.redirecttopage}/>
-                                 </Router>
-<Link to="/help">Help</Link> | <Link to="/forgotpasswordpage">Forgot Password Page</Link> | <Link to="/oneredirectpage">One Redirect Page</Link> | <Link to="/redirecttopage">Redirect to page - weekends</Link>
+
                                         </div>
                                         </div>
                                         </div>
                                         </div>
+    </div>
                                         );
                                     }
                                     }
 
                                     export default MainDashboard;
+
+
 

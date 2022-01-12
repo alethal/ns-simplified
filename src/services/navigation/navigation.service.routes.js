@@ -41,12 +41,14 @@ export const routes = {
  // webmasters: 'webmasters',
 //  weekends: 'weekends',
 //  search: 'search',
-
+  applicationstartroute: '/',
   forgotpasswordpage: 'forgotpasswordpage',
   resetpassworddialog: 'resetpassworddialog',
   resetpassworddialogpage: 'resetpassworddialogpage',
   oneredirectpage: 'oneredirectpage',
-  redirecttopage: 'redirecttopage'
+  redirecttopage: 'redirecttopage',
+  weekendslandingpage: 'weekendslandingpage',
+  standaloneplayerpage: 'standaloneplayerpage',
 };
 
 
@@ -92,7 +94,7 @@ export const routes = {
 
 //export const getBrowsingPageRoute = () => `/${routes.browse}`;
 
-export const getApplicationStartRoute = () => `${routes.root}`;
+
 
 //export const getStarsBaseRoute = () => `/${routes.stars}`;
 
@@ -189,6 +191,13 @@ export const getResetPasswordDialogPage = () => `/${routes.resetpassworddialogpa
 export const getOneRedirectPage = () => `/${routes.oneredirectpage}`;
 
 export const getRedirectToPage = () => `/${routes.redirecttopage}`;
+
+export const getWeekendsLandingPageRoute = () => `/${routes.weekendslandingpage}`;
+
+export const getApplicationStartRoute = () => `${routes.root}`;
+
+export const getStandAlonePlayerPageRoute = () => `/${routes.standaloneplayerpage}`;
+
 
 
 //export const getFavoritesPageRoute = () => `${routes.favorites}`;
