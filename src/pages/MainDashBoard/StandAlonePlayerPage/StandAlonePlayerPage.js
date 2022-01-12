@@ -12,7 +12,7 @@ class StandAlonePlayerPage extends Component {
     return (
       <div className="StandAlonePlayerPage">
           <h2>StandAlonePlayerPage</h2>
-<h4>StandAlonePlayerComponent</h4>
+          <hr />
           <StandAlonePlayerComponent />
 
       </div>
